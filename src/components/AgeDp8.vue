@@ -1,14 +1,14 @@
 <template>
     <div>
       <v-row >
-        <!-- Title with Frame and Shadow -->
+        
         <v-col>
           <div class="title-frame">
             <h1>พัฒนาการของทารก เดือนที่ 8 (สัปดาห์ที่ 31-35)</h1>
           </div >
         </v-col>
 
-        <!-- Card 1 -->
+        
         <v-col >
             <v-card class="mx-auto" max-width="344" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);">            <v-img
               src="../assets/apd/31-34-Week-794x1024.webp"
@@ -35,7 +35,7 @@
           </v-card>
         </v-col>
   
-        <!-- Card 2 -->
+       
         <v-col>
             <v-card class="mx-auto" max-width="344" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);">            <v-img
               src="../assets/apd/29-30-Week-794x1024.webp"
@@ -79,18 +79,18 @@
   </script>
   <style>
 .title-frame {
-  border: 2px solid #007BFF; /* Border style and color */
-  box-shadow: 0px 0px 10px #007BFF; /* Box shadow style and color */
+  border: 2px solid #007BFF; 
+  box-shadow: 0px 0px 10px #007BFF; 
   text-align: center;
   padding: 10px;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px; 
 }
 
 .title-frame h1 {
-  font-size: 24px; /* Adjust the font size as needed */
+  font-size: 24px; 
   margin: 0;
 }
 .v-card {
-  margin-top: 100px; /* Add margin to center the cards vertically */
+  margin-top: 100px; 
 }
 </style>

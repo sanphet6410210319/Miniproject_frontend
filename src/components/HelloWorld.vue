@@ -41,7 +41,6 @@
     </div>
     <br>
     <div class="video-container">
-      <!-- Embed YouTube Video -->
       <div class="video-wrapper">
         <iframe
           width="500"
@@ -57,15 +56,14 @@
 
 <style scoped>
 .title-frame h1 {
-  font-size: px; /* Adjust the font size as needed */
+  font-size: px; 
   margin: 0;
 }
 .title-frame {
-  border: 2px solid #007BFF; /* Border style and color */
-  box-shadow: 0px 0px 10px #007BFF; /* Box shadow style and color */
-  text-align: center;
+  border: 2px solid #007BFF; 
+  box-shadow: 0px 0px 10px #007BFF; 
   padding: 2px;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px; 
 }
 .mothertext {
   text-align: center;
@@ -101,26 +99,26 @@
     }
   }
 .mothertext {
-  animation: textAnimation 1s ease-in-out; /* เพิ่ม animation ให้กับข้อความ */
+  animation: textAnimation 1s ease-in-out; 
 }
 
 .image-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
-  margin-top: 30px; /* ระยะห่างของรูปภาพด้านบน */
+  justify-content: center; 
+  margin-top: 30px; 
 }
 
 .image-wrapper {
-  margin: 20px; /* ระยะห่างระหว่างรูปภาพ */
+  margin: 20px; 
   max-width: 200px;
   max-height: 200px;
   cursor: pointer;
-  transition: transform 0.2s; /* เพิ่มอนิเมชันการเปลี่ยนรูปภาพเมื่อเม้าส์ไปชี้ */
+  transition: transform 0.2s; 
 }
 
 .image-wrapper:hover {
-  transform: scale(1.1); /* เพิ่มขนาดของรูปภาพเมื่อเม้าส์ไปชี้ */
+  transform: scale(1.1); 
 }
 
 .video-container {
@@ -130,13 +128,13 @@
 }
 
 .video-wrapper {
-  max-width: 580px; /* ขนาดสูงสุดของรูปภาพวิดีโอ */
-  margin: 0 auto; /* จัดให้วิดีโออยู่ตรงกลาง */
-  border: 5px solid #333; /* เพิ่มเส้นขอบสีเข้มเป็นกรอบ */
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.8); /* เพิ่มเอฟเฟกต์เงา */
+  max-width: 580px; 
+  margin: 0 auto; 
+  border: 5px solid #333; 
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.8); 
 }
 .title-frame h1 {
-  font-size: px; /* Adjust the font size as needed */
+  font-size: px; 
   margin: 0;
 }
 
@@ -144,14 +142,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 20%; /* Adjust the width as needed */
+    width: 20%; 
   }
 
   .top-right-image {
     position: absolute;
     top: 0;
     right: 0;
-    width: 20%; /* Adjust the width as needed */
+    width: 20%; 
   }
 
   .title-frame {

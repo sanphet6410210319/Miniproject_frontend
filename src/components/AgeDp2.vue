@@ -34,7 +34,7 @@
         
       </v-col>
 
-      <!-- Card 1 -->
+      
       <v-col>
         <v-card class="mx-auto" max-width="500" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);">
           <v-img
@@ -58,32 +58,30 @@ data: () => ({
   show2: false,
   show3: false,
   show4: false,
-  // Define separate show variables for other weeks (e.g., show5, show6, etc.)
 }),
 };
 </script>
 
 <style>
 .title-frame {
-border: 2px solid #007BFF; /* Border style and color */
-box-shadow: 0px 0px 10px #007BFF; /* Box shadow style and color */
-text-align: center;
+border: 2px solid #007BFF; 
+box-shadow: 0px 0px 10px #007BFF;
 padding: 10px;
-border-radius: 10px; /* Rounded corners */
+border-radius: 10px; 
 margin-top: 30px;
 }
 
 .title-frame h1 {
-font-size: 28px; /* เพิ่มขนาดฟอนต์ตามที่คุณต้องการ */
+font-size: 28px; 
 margin: 0;
 }
 
 .card-text {
-font-size: 20px; /* เพิ่มขนาดฟอนต์สำหรับเนื้อหาใน <v-card-text> */
+font-size: 20px; 
 }
 
 .v-card {
-margin-top: 100px; /* Add margin to center the cards vertically */
+margin-top: 100px; 
 }
 .subtitle-text {
   font-size: 20px;

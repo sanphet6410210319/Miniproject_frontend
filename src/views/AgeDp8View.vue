@@ -4,7 +4,6 @@
     <v-row>
       <v-col class="sd" clos="12">
         <AgeDp8/>
-        <!-- เพิ่มปุ่มลูกศรกลับไปยังหน้า AgeDp -->
         <v-btn @click="goToAgeDp">กลับไปยังหน้า AgeDp</v-btn>
       </v-col>
     </v-row>

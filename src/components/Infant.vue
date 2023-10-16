@@ -145,9 +145,7 @@
     color: #333;
     font-weight: bold;
     text-decoration: underline;
-    /* เพิ่ม underline ให้กับเส้นใต้หัวข้อ */
     padding-bottom: 10px;
-    /* เพิ่มระยะห่างด้านล่างของหัวข้อ */
     border: 1px solid #ddd;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -234,7 +232,6 @@
 
 .title-frame h1 {
     font-size: px;
-    /* Adjust the font size as needed */
     margin: 0;
 }
 

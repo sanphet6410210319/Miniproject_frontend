@@ -32,12 +32,10 @@
       </v-card-text>
     </v-card>
 
-    <!-- Snackbar สำหรับแสดงข้อความคำแนะนำ -->
     <v-snackbar v-model="showSnackbar" :timeout="3000" color="error">
       {{ snackbarMessage }}
     </v-snackbar>
 
-    <!-- ส่วน Pagination -->
     <v-pagination
       v-model="currentPage"
       :length="totalPages"
@@ -138,7 +136,6 @@ export default {
 </script>
 
 <style>
-/* สร้าง animation fade เมื่อ Feed ถูกเพิ่มหรือลบ */
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
 }
@@ -146,7 +143,6 @@ export default {
   opacity: 0;
 }
 
-/* Add a border to each feed card */
 .feed-card {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -154,7 +150,6 @@ export default {
   padding: 10px;
 }
 
-/* Add a border to the main card */
 .card-with-border {
   border: 1px solid #ccc;
   border-radius: 5px;

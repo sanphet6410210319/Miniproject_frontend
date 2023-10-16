@@ -14,7 +14,6 @@
           <v-btn text @click="goToInfant">การกระตุ้นทารก</v-btn>
           <v-btn class="admin-edit-button" text @click="openAdminEdit">Admin Edit</v-btn>
 
-          <!-- Dialog for entering the code -->
           <v-dialog v-model="adminEditDialog" max-width="400">
             <v-card>
               <v-card-title>Enter Access Code</v-card-title>
@@ -37,7 +36,7 @@
       </transition>
     </v-main>
 
-    <!-- VSnackbar for displaying alerts -->
+   
     <v-snackbar v-model="showAlert" :color="alertColor" :multi-line="multiLine">
       <span>{{ alertMessage }}</span>
       <template v-if="multiLine">
@@ -46,10 +45,42 @@
       <v-btn text @click="showAlert = false">Close</v-btn>
     </v-snackbar>
 
-    <!-- Footer -->
+    
     <v-footer dark padless>
-      <!-- Footer content -->
+      <v-card class="flex" flat tile>
+        <v-card-title class="teal">
+          <strong class="subheading">Sanphet Saefang</strong>
+          <v-spacer></v-spacer>
+          
+          <a href="https://www.facebook.com/SanphetEx/" target="_blank">
+            <v-btn dark icon>
+              <v-icon size="24px">mdi-facebook</v-icon>
+            </v-btn>
+          </a>
+          <a href="https://github.com/sanphet6410210319" target="_blank">
+            <v-btn dark icon>
+              <v-icon size="24px">mdi-github</v-icon>
+            </v-btn>
+          </a>
+          <a href="https://www.instagram.com/sanphet.x/" target="_blank">
+            <v-btn dark icon>
+              <v-icon size="24px">mdi-instagram</v-icon>
+            </v-btn>
+          </a>
+          <a href="https://mail.google.com/mail/u/0/?hl=th&tf=cm&fs=1&to=poposchter07@gmail.com" target="_blank">
+            <v-btn dark icon>
+              <v-icon size="24px">mdi-gmail</v-icon>
+            </v-btn>
+          </a>
+        </v-card-title>
+        <v-card-text class="py-2 white--text text-center">
+          {{ new Date().getFullYear() }} — <strong>Mother Box Welcome</strong><br>
+          Department of Computer Science, Faculty of Science, Prince of Songkla University 
+
+        </v-card-text>
+      </v-card>
     </v-footer>
+  
   </v-app>
 </template>
 
@@ -120,7 +151,7 @@ export default {
           this.closeAdminEditDialog();
         }
       } else {
-        // แสดงการแจ้งเตือน
+       
         this.alertMessage = 'คุณกรอกรหัสเข้าระบบผิด';
         this.showAlert = true;
       }

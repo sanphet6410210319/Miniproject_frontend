@@ -25,7 +25,7 @@ export default {
 .x {
   background-image: url('~@/assets/117542534_xl-scaled.webp');
   background-size: cover;
-  height: 100vh; /* ทำให้รูปภาพเต็มหน้าจอ */
+  height: 100vh; 
   width: 100%;
  
 }

@@ -1,11 +1,9 @@
 <template >
 
-    <!-- เนื้อหา -->
     <v-container>
      <div class="title-frame">
         <h1 class="mothertext">พัฒนาการ <span class="heart-box">ของทารกในครรภ์</span></h1> 
       </div>
-      <!-- แสดงรูปภาพ -->
       <div class="image-container">
         <v-card
             class="mx-auto card-with-animation"
@@ -21,7 +19,7 @@
   <v-card-title>
       อายุครรภ์ 1-4 สัปดาห์    </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(0)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 1-4 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(0)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
 <v-card
@@ -37,7 +35,7 @@
   <v-card-title>
      อายุครรภ์ 5-8 สัปดาห์   </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(1)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 5-8 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(1)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
 <v-card
@@ -53,7 +51,7 @@
   <v-card-title>
     อายุครรภ์ 9-13 สัปดาห์   </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(2)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 5-8 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(2)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
 <v-card
@@ -69,7 +67,7 @@
   <v-card-title>
     อายุครรภ์ 14-17 สัปดาห์   </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(3)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 5-8 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(3)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
 <v-card
@@ -85,7 +83,7 @@
   <v-card-title>
     อายุครรภ์ 18-21 สัปดาห์   </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(4)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 5-8 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(4)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
 <v-card
@@ -110,7 +108,7 @@
   <v-card-title>
     อายุครรภ์ 22-26 สัปดาห์ </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(5)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 5-8 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(5)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
 <v-card
@@ -126,7 +124,7 @@
   <v-card-title>
     อายุครรภ์ 27-30 สัปดาห์    </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(6)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 5-8 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(6)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
 <v-card
@@ -142,7 +140,7 @@
   <v-card-title>
     อายุครรภ์ 31-35 สัปดาห์   </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(7)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 5-8 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(7)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
 <v-card
@@ -158,7 +156,7 @@
   <v-card-title>
     อายุครรภ์ 36-40 สัปดาห์    </v-card-title>
   <v-card-actions>
-    <v-btn color="orange lighten-2" @click="goToAgeDp(8)">ดูรายละเอียด</v-btn> <!-- อายุครรภ์ 5-8 สัปดาห์ -->
+    <v-btn color="orange lighten-2" @click="goToAgeDp(8)">ดูรายละเอียด</v-btn> 
   </v-card-actions>
 </v-card>
       </div>
@@ -181,7 +179,6 @@ export default {
         '/agedp7',
         '/agedp8',
         '/agedp9',
-        // เพิ่มเส้นทางอื่น ๆ ตามต้องการ
       ];
 
       this.$router.push({ path: paths[index] }).catch(() => {});
@@ -205,8 +202,8 @@ export default {
 .mothertext {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
-  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  justify-content: center; 
+  align-items: center; 
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -258,7 +255,7 @@ export default {
 }
 
 .title-frame h1 {
-  font-size: px; /* Adjust the font size as needed */
+  font-size: px; 
   margin: 0;
 }
 
@@ -266,14 +263,14 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20%; /* Adjust the width as needed */
+    width: 20%; 
   }
 
   .top-right-image {
     position: absolute;
     top: 0;
     right: 0;
-    width: 20%; /* Adjust the width as needed */
+    width: 20%; 
   }
 
   .title-frame {

@@ -75,7 +75,7 @@
         }
       },
       searchFeeds() {
-        this.currentPage = 1; // Reset to first page when a new search is initiated.
+        this.currentPage = 1;
       },
     },
   };

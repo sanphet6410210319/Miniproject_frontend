@@ -8,7 +8,6 @@
         @input="searchFeeds"
       ></v-text-field>
   
-      <!-- Edit Feed Dialog -->
       <v-dialog v-model="editingFeedDialog" max-width="600">
         <v-card>
           <v-card-title class="headline">{{ editingFeed ? 'Edit Feed' : 'Add Feed' }}</v-card-title>
@@ -68,9 +67,9 @@
         editingFeedDialog: false,
         showSnackbar: false,
         snackbarMessage: '',
-        currentPage: 1,    // หน้าปัจจุบัน
-        itemsPerPage: 5,  // จำนวน Feed ในหนึ่งหน้า
-        totalPages: 0,    // จำนวนหน้าทั้งหมด
+        currentPage: 1,   
+        itemsPerPage: 5,  
+        totalPages: 0,    
       };
     },
     methods: {
@@ -82,7 +81,6 @@
               return feed;
             });
   
-            // คำนวณจำนวนหน้าทั้งหมด
             this.totalPages = Math.ceil(this.feeds.length / this.itemsPerPage);
           })
           .catch(error => {
@@ -164,7 +162,6 @@
         card.classList.remove('animated');
       },
       paginateFeed() {
-        // อัปเดตหน้าปัจจุบันเมื่อมีการคลิกหน้า Pagination
         this.fetchFeeds();
       },
     },
