@@ -185,7 +185,7 @@ export default {
   name: 'HelloWorld',
   data() {
     return {};
-  },
+  }, 
   methods: {
     goToAgeDp() {
       this.$router.push({ path: '/agedp' }).catch(() => {});

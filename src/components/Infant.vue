@@ -68,7 +68,7 @@
                 <div class="right-content">
                     <v-card class="mx-auto card-with-animation" max-width="700" @mouseenter="startCardAnimation"
                         @mouseleave="stopCardAnimation">
-                        <v-img src="../assets/in/1.jpg" height="100%"></v-img>
+                        <v-img src="../assets/1.jpg" height="100%"></v-img>
                     </v-card>
                 </div>
             </v-col>
